@@ -12,7 +12,6 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
-        window.rewardSuccess = false;
         window["PO_OPTIONS"] = {
             "gameId": "b4c44585642d451d838a83609fb6e95a",
             "onEvent": function(event) {
@@ -30,7 +29,6 @@ cc.Class({
                         // pause game logic / mute audio
                         break;
                     case "SDK_REWARDED_WATCH_COMPLETE":
-                        rewardSuccess = true;
                         // this event is triggered when your user completely watched rewarded ad
                         break;
                 }
